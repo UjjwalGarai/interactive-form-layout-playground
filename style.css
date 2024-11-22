@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  header {
+    background: #0078d7;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+  }
+  
+  main {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; */
+    /* height: 100vh; */
+    padding: 1em;
+  }
+
+
+  h1, h2 {
+    color: #00509e;
+  }
+  
+  form {
+    margin-bottom: 2em;
+    padding: 1em;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+  }
+  
+  input, select, textarea, button, output {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button {
+    background: #0078d7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #00509e;
+  }
+  
+  fieldset {
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+  }
+  
+  legend {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  output {
+    font-size: 1.2em;
+    color: #0078d7;
+  }
+  

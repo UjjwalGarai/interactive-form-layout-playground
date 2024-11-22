@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>HTML Form Playground</h1>
+    <p>Experiment with various form elements and attributes!</p>
+  </header>
+  <main>
+    <!-- Basic Form -->
+    <section>
+      <h2>Basic Form Example</h2>
+      <form action="/submit" method="POST">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob">
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Select and Textarea -->
+    <section>
+      <h2>Dropdown and Multiline Input</h2>
+      <form>
+        <label for="country">Choose your country:</label>
+        <select id="country" name="country">
+          <optgroup label="Asia">
+            <option value="india">India</option>
+            <option value="china">China</option>
+          </optgroup>
+          <optgroup label="Europe">
+            <option value="germany">Germany</option>
+            <option value="france">France</option>
+          </optgroup>
+        </select>
+
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="5" cols="30"></textarea>
+      </form>
+    </section>
+
+    <!-- Datalist and Output -->
+    <section>
+      <h2>Dynamic Input and Output</h2>
+      <form>
+        <label for="browser">Choose a browser:</label>
+        <input list="browsers" id="browser" name="browser">
+        <datalist id="browsers">
+          <option value="Chrome">
+          <option value="Firefox">
+          <option value="Safari">
+          <option value="Edge">
+        </datalist>
+
+        <label for="range">Adjust Volume:</label>
+        <input type="range" id="range" name="volume" min="0" max="100" oninput="updateVolume(this.value)">
+        <output id="volumeOutput">50</output>
+      </form>
+    </section>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
